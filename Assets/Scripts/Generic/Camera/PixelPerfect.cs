@@ -35,7 +35,7 @@ public class PixelPerfect : MonoBehaviour
 		orthoSize /= multiplier;
 
 		// set it
-		this.GetComponent<Camera> ().orthographicSize = orthoSize;
+		this.GetComponent<Camera> ().orthographicSize = Mathf.Round(orthoSize);
 
 		Debug.Log (lastSize + " " + orthoSize + " " + multiplier + " " + referencePixelsPerUnit);
 	}
